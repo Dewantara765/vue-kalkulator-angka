@@ -49,8 +49,8 @@ function hitung() {
             hasilOperasi === -Infinity) {
           throw new Error('Error tidak bisa dibagi nol');
         }
-        this.teks = Number.isFinite(evaluatedResult)
-                      ? evaluatedResult : 'Error';
+        this.teks = Number.isFinite(hasilOperasi)
+                      ? hasilOperasi : 'Error';
         this.kalkulasi = true;
         // Set flag to true after calculation
       } catch (error) {
